@@ -1,0 +1,62 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "prettier"
+  ],
+  "rules": {
+  "no-use-before-define": [
+    "error",
+    { "functions": false, "classes": true, "variables": false }
+  ],
+    "semi": ["error", "never"],
+    "max-len": 0,
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": [
+    "error",
+    { "optionalDependencies": true }
+  ],
+    "react/jsx-curly-brace-presence": [
+    "error",
+    { "props": "never", "children": "always" }
+  ],
+    "react/jsx-filename-extension": [2, { "extensions": [".js"] }],
+    "react/static-property-placement": ["error", "static public field"],
+    "no-underscore-dangle": 0,
+    "react/forbid-prop-types": 0,
+    "react/sort-comp": [
+    2,
+    {
+      "order": [
+        "propTypesGroup",
+        "static-variables",
+        "static-methods",
+        "lifecycle",
+        "instance-methods",
+        "instance-variables",
+        "everything-else",
+        "render"
+      ],
+      "groups": {
+        "propTypesGroup": ["propTypes", "defaultProps"]
+      }
+    }
+  ],
+    "react/jsx-props-no-spreading": 0,
+    "no-continue": 0,
+    "react/no-unsafe": ["error", { "checkAliases": true }]
+},
+  "settings": {
+  "import/resolver": {
+    "node": {
+      "moduleDirectory": ["node_modules", "src"]
+    }
+  }
+},
+  "env": {
+  "browser": true,
+    "jest": true,
+    "jasmine": true
+},
+  "plugins": ["detox"]
+}
