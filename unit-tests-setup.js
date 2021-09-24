@@ -1,3 +1,8 @@
+jest.mock('@react-native-community/netinfo', () => ({
+  addEventListener: jest.fn(),
+  fetch: jest.fn(),
+}))
+
 jest.mock('react-native-navigation', () => ({
     Navigation: {
       registerComponent: jest.fn(),
