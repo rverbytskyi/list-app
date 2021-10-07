@@ -20,7 +20,6 @@
     "prop-types": "15.7.2",
     "react": "17.0.2",
     "react-native": "0.65.1",
-    "react-native-dotenv": "3.2.0",
     "react-native-navigation": "7.21.0",
     "react-redux": "7.2.5",
     "redux": "4.1.1",
@@ -49,6 +48,7 @@
     "lint-staged": "11.1.2",
     "metro-react-native-babel-preset": "0.66.0",
     "react-native-codegen": "0.0.7",
+    "react-native-dotenv": "3.2.0",
     "react-test-renderer": "17.0.2",
     "redux-saga-test-plan": "4.0.3"
   },

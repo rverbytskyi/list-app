@@ -1,5 +1,6 @@
 import { expectSaga } from 'redux-saga-test-plan'
-import { MY_API_FILMS_TOKEN } from 'react-native-dotenv'
+// eslint-disable-next-line import/no-unresolved
+import { MY_API_FILMS_TOKEN } from '@env'
 
 import {
   GET_MORE_MOVIES_REQUEST,

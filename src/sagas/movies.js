@@ -1,6 +1,7 @@
 import { spawn, take, put, select } from 'redux-saga/effects'
 
-import { MY_API_FILMS_TOKEN } from 'react-native-dotenv'
+// eslint-disable-next-line import/no-unresolved
+import { MY_API_FILMS_TOKEN } from '@env'
 
 import { API_REQUEST } from '../types/api'
 
